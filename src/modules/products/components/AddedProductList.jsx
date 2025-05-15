@@ -1,21 +1,25 @@
-import React from 'react'
-
-export const AddedProductList = ({addedproducts}) => {
+import React, { useEffect, useState } from 'react'
+import { ShowSubtotal } from './ShowSubtotal'
+import { AddedProduct } from './addedProduct'
+import { ShowDetailProductAdded } from './ShowDetailProductAdded'
+export const AddedProductList = ({addedProducts}) => {
+  
   return (
     <>
         {
-        addedproducts?.map((product)=>
+          addedProducts?.map((addedProduct)=> 
+           <ShowDetailProductAdded key={addedProduct.id_producto} addedProduct={addedProduct}/>
+          ) 
+        }
 
-        <div className='flex justify-between px-6 border rounded border-gray-300 shadow-sm my-1 py-2' key={ product.value.id_producto }>
-            <h2 key={ product.value.id_producto }>{product.label}</h2>
-            <h2>precio unidad : {product.value.precio_unitario}</h2>
-        </div>  
-          
+        <div>
 
+          <button className='text-white bg-blue-600 rounded px-3 py-2 mt-8'>
+          Generar Nota Venta
+          </button>
 
+        </div>
 
-        )  
-      }
     </>
   )
 }

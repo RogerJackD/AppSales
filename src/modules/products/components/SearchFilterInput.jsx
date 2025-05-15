@@ -21,8 +21,9 @@ export const SearchFilterInput = ({handleAddedProducts}) => {
   };
 
   const addProducts = () => {
-    handleAddedProducts(selectedOption)
+    handleAddedProducts(selectedOption.value)
   };
+
 
   return (
     <>
@@ -37,7 +38,7 @@ export const SearchFilterInput = ({handleAddedProducts}) => {
         loadingMessage={() => "Buscando..."}
       />
 
-      <button className="bg-green-600 shadow-md text-white rounded px-3 py-2 mt-2" onClick={addProducts}>AGREGAR ITEM</button>
+      <button className="bg-green-600 shadow-md text-white rounded hover:bg-green-700 active:bg-green-800 px-3 py-2 mt-4 my-4" onClick={addProducts}>AGREGAR ITEM</button>
     </>
   );
 };
