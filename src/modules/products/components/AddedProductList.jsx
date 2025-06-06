@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { ShowSubtotal } from './ShowSubtotal'
-import { AddedProduct } from './addedProduct'
+import { AddedProduct } from './AddedProduct'
 import { ShowDetailProductAdded } from './ShowDetailProductAdded'
 export const AddedProductList = ({addedProducts}) => {
   

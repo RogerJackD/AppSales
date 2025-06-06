@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { AddedProduct } from './addedProduct';
+import { AddedProduct } from './AddedProduct';
 import { ShowSubtotal } from './ShowSubtotal';
 export const ShowDetailProductAdded = ({addedProduct}) => {
 
