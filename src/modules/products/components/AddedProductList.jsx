@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react'
 import { ShowSubtotal } from './ShowSubtotal'
 import { AddedProduct } from './AddedProduct'
 import { ShowDetailProductAdded } from './ShowDetailProductAdded'
